@@ -410,13 +410,13 @@ function setupSheets() {
   // ==========================================
   var usersSheet = initSheet('Users', ['username', 'password', 'role', 'nama', 'idPasien']);
   usersSheet.appendRow(['admin', 'admin123', 'admin', 'Administrator', '']);
-  usersSheet.appendRow(['fisioterapis', 'fisio123', 'fisioterapis', 'Anisah Ainiyah', '']);
+  usersSheet.appendRow(['fisioterapis', 'fisio123', 'fisioterapis', 'Khoirunnisa, S.Ftr.Ftr., M.fis', '']);
 
   // ==========================================
   // 2. Terapis Sheet
   // ==========================================
   var terapisSheet = initSheet('Terapis', ['id', 'nama', 'spesialisasi', 'deskripsi', 'shiftMulai', 'shiftSelesai']);
-  terapisSheet.appendRow(['PHY001', 'Anisah Ainiyah', 'Fisioterapis Utama', 'Fisioterapis berlisensi spesialis muskuloskeletal, neurologi, dan rehabilitasi pasca cedera.', '08:00', '17:00']);
+  terapisSheet.appendRow(['PHY001', 'Khoirunnisa, S.Ftr.Ftr., M.fis', 'Fisioterapis Utama', 'Fisioterapis berlisensi spesialis muskuloskeletal, neurologi, dan rehabilitasi pasca cedera.', '08:00', '17:00']);
 
   // ==========================================
   // 3. JenisTerapi Sheet
@@ -525,26 +525,26 @@ function setupSheets() {
   var yesterdayStr = Utilities.formatDate(new Date(new Date().getTime() - 24 * 60 * 60 * 1000), Session.getScriptTimeZone(), 'yyyy-MM-dd');
 
   var jadwalList = [
-    ['APT001', pasienData[0].id, pasienData[0].nama, 'Fisioterapi Manual', 'Anisah Ainiyah', todayStr, '08:00', 'Ruang 1', 'Menunggu'],
-    ['APT002', pasienData[1].id, pasienData[1].nama, 'Terapi Latihan', 'Anisah Ainiyah', todayStr, '08:30', 'Ruang 2', 'Dalam Proses'],
-    ['APT003', pasienData[2].id, pasienData[2].nama, 'Elektroterapi', 'Anisah Ainiyah', todayStr, '09:00', 'Ruang 1', 'Selesai'],
-    ['APT004', pasienData[3].id, pasienData[3].nama, 'Hidroterapi', 'Anisah Ainiyah', todayStr, '09:30', 'Ruang 3', 'Menunggu'],
-    ['APT005', pasienData[4].id, pasienData[4].nama, 'Terapi Okupasi', 'Anisah Ainiyah', todayStr, '10:00', 'Ruang 2', 'Selesai'],
-    ['APT006', pasienData[5].id, pasienData[5].nama, 'Dry Needling', 'Anisah Ainiyah', todayStr, '10:30', 'Ruang 1', 'Dalam Proses'],
-    ['APT007', pasienData[6].id, pasienData[6].nama, 'Elektroterapi', 'Anisah Ainiyah', todayStr, '11:00', 'Ruang 1', 'Selesai'],
-    ['APT008', pasienData[7].id, pasienData[7].nama, 'Fisioterapi Manual', 'Anisah Ainiyah', todayStr, '11:30', 'Ruang 2', 'Menunggu'],
-    ['APT009', pasienData[8].id, pasienData[8].nama, 'Terapi Latihan', 'Anisah Ainiyah', todayStr, '13:00', 'Ruang 1', 'Selesai'],
-    ['APT010', pasienData[9].id, pasienData[9].nama, 'Hidroterapi', 'Anisah Ainiyah', todayStr, '13:30', 'Ruang 3', 'Selesai'],
-    ['APT011', pasienData[10].id, pasienData[10].nama, 'Dry Needling', 'Anisah Ainiyah', yesterdayStr, '08:00', 'Ruang 1', 'Selesai'],
-    ['APT012', pasienData[11].id, pasienData[11].nama, 'Terapi Okupasi', 'Anisah Ainiyah', yesterdayStr, '09:00', 'Ruang 2', 'Selesai'],
-    ['APT013', pasienData[12].id, pasienData[12].nama, 'Terapi Latihan', 'Anisah Ainiyah', yesterdayStr, '10:00', 'Ruang 1', 'Selesai'],
-    ['APT014', pasienData[13].id, pasienData[13].nama, 'Fisioterapi Manual', 'Anisah Ainiyah', yesterdayStr, '11:00', 'Ruang 1', 'Selesai'],
-    ['APT015', pasienData[14].id, pasienData[14].nama, 'Dry Needling', 'Anisah Ainiyah', yesterdayStr, '13:00', 'Ruang 2', 'Selesai'],
-    ['APT016', pasienData[15].id, pasienData[15].nama, 'Elektroterapi', 'Anisah Ainiyah', yesterdayStr, '14:00', 'Ruang 1', 'Selesai'],
-    ['APT017', pasienData[16].id, pasienData[16].nama, 'Terapi Latihan', 'Anisah Ainiyah', yesterdayStr, '15:00', 'Ruang 2', 'Selesai'],
-    ['APT018', pasienData[17].id, pasienData[17].nama, 'Terapi Okupasi', 'Anisah Ainiyah', yesterdayStr, '16:00', 'Ruang 1', 'Selesai'],
-    ['APT019', pasienData[18].id, pasienData[18].nama, 'Fisioterapi Manual', 'Anisah Ainiyah', yesterdayStr, '16:30', 'Ruang 2', 'Selesai'],
-    ['APT020', pasienData[19].id, pasienData[19].nama, 'Terapi Latihan', 'Anisah Ainiyah', yesterdayStr, '17:00', 'Ruang 1', 'Selesai']
+    ['APT001', pasienData[0].id, pasienData[0].nama, 'Fisioterapi Manual', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '08:00', 'Ruang 1', 'Menunggu'],
+    ['APT002', pasienData[1].id, pasienData[1].nama, 'Terapi Latihan', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '08:30', 'Ruang 2', 'Dalam Proses'],
+    ['APT003', pasienData[2].id, pasienData[2].nama, 'Elektroterapi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '09:00', 'Ruang 1', 'Selesai'],
+    ['APT004', pasienData[3].id, pasienData[3].nama, 'Hidroterapi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '09:30', 'Ruang 3', 'Menunggu'],
+    ['APT005', pasienData[4].id, pasienData[4].nama, 'Terapi Okupasi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '10:00', 'Ruang 2', 'Selesai'],
+    ['APT006', pasienData[5].id, pasienData[5].nama, 'Dry Needling', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '10:30', 'Ruang 1', 'Dalam Proses'],
+    ['APT007', pasienData[6].id, pasienData[6].nama, 'Elektroterapi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '11:00', 'Ruang 1', 'Selesai'],
+    ['APT008', pasienData[7].id, pasienData[7].nama, 'Fisioterapi Manual', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '11:30', 'Ruang 2', 'Menunggu'],
+    ['APT009', pasienData[8].id, pasienData[8].nama, 'Terapi Latihan', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '13:00', 'Ruang 1', 'Selesai'],
+    ['APT010', pasienData[9].id, pasienData[9].nama, 'Hidroterapi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', todayStr, '13:30', 'Ruang 3', 'Selesai'],
+    ['APT011', pasienData[10].id, pasienData[10].nama, 'Dry Needling', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '08:00', 'Ruang 1', 'Selesai'],
+    ['APT012', pasienData[11].id, pasienData[11].nama, 'Terapi Okupasi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '09:00', 'Ruang 2', 'Selesai'],
+    ['APT013', pasienData[12].id, pasienData[12].nama, 'Terapi Latihan', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '10:00', 'Ruang 1', 'Selesai'],
+    ['APT014', pasienData[13].id, pasienData[13].nama, 'Fisioterapi Manual', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '11:00', 'Ruang 1', 'Selesai'],
+    ['APT015', pasienData[14].id, pasienData[14].nama, 'Dry Needling', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '13:00', 'Ruang 2', 'Selesai'],
+    ['APT016', pasienData[15].id, pasienData[15].nama, 'Elektroterapi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '14:00', 'Ruang 1', 'Selesai'],
+    ['APT017', pasienData[16].id, pasienData[16].nama, 'Terapi Latihan', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '15:00', 'Ruang 2', 'Selesai'],
+    ['APT018', pasienData[17].id, pasienData[17].nama, 'Terapi Okupasi', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '16:00', 'Ruang 1', 'Selesai'],
+    ['APT019', pasienData[18].id, pasienData[18].nama, 'Fisioterapi Manual', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '16:30', 'Ruang 2', 'Selesai'],
+    ['APT020', pasienData[19].id, pasienData[19].nama, 'Terapi Latihan', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, '17:00', 'Ruang 1', 'Selesai']
   ];
   jadwalList.forEach(function(row) { jadwalSheet.appendRow(row); });
 
@@ -554,26 +554,26 @@ function setupSheets() {
   // ==========================================
   var rekamSheet = initSheet('RekamMedis', ['id', 'idPasien', 'namaPasien', 'diagnosa', 'tindakan', 'catatan', 'pemeriksa', 'tglPeriksa', 'status']);
   var rekamList = [
-    ['RM001', pasienData[0].id, pasienData[0].nama, 'Low Back Pain ec HNP L4-L5', 'Fisioterapi Manual + Traksi Lumbal', 'Nyeri pinggang berkurang pasca traksi. Edukasi core stability.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM002', pasienData[1].id, pasienData[1].nama, 'Hemiparesis Sinistra pasca Stroke', 'Terapi Latihan fungsional', 'Latihan berjalan dengan quad-cane, keseimbangan mulai stabil.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM003', pasienData[2].id, pasienData[2].nama, 'Osteoarthritis Genu Bilateral', 'Elektroterapi + Ultrasound', 'Ultrasound di area lutut untuk mengurangi kekakuan sendi.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM004', pasienData[3].id, pasienData[3].nama, 'Frozen Shoulder Dextra', 'Hidroterapi di kolam hangat', 'Relaksasi otot bahu, ROM abduksi meningkat 15 derajat.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM005', pasienData[4].id, pasienData[4].nama, 'Pasca Rekonstruksi ACL Sinistra', 'Terapi Okupasi + Penguatan otot', 'Mobilisasi sendi lutut pasca operasi, fokus ekstensi penuh.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM006', pasienData[5].id, pasienData[5].nama, 'Spondylosis Cervical', 'Dry Needling upper trapezius', 'Pelepasan spasme otot leher belakang, pusing berkurang.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM007', pasienData[6].id, pasienData[6].nama, 'Carpal Tunnel Syndrome Bilateral', 'Elektroterapi TENS pergelangan tangan', 'Kebas di jari-jari berkurang setelah TENS selama 20 menit.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM008', pasienData[7].id, pasienData[7].nama, 'Plantar Fasciitis Bilateral', 'Fisioterapi Manual + Deep tissue massage', 'Peregangan plantar fascia telapak kaki, nyeri tumit berkurang.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM009', pasienData[8].id, pasienData[8].nama, 'Strain Gastrocnemius Dextra', 'Terapi Latihan stretching betis', 'Restorasi panjang serat otot betis, jalan tidak pincang.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM010', pasienData[9].id, pasienData[9].nama, 'Sprain Ankle Dextra Grade II', 'Hidroterapi + latihan proprioseptif', 'Latihan keseimbangan di kolam hangat untuk mengurangi bengkak.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM011', pasienData[10].id, pasienData[10].nama, 'Tennis Elbow Sinistra', 'Dry Needling extensor carpi radialis', 'Nyeri tekan siku lateral berkurang drastis.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM012', pasienData[11].id, pasienData[11].nama, 'Hemiparesis Dextra pasca Stroke', 'Terapi Okupasi aktivitas makan mandiri', 'Melatih motorik halus tangan kanan memegang sendok.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM013', pasienData[12].id, pasienData[12].nama, 'Delayed Motor Development', 'Terapi Latihan merangkak & berdiri', 'Stimulasi motorik kasar untuk anak usia 2 tahun.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM014', pasienData[13].id, pasienData[13].nama, 'Ischialgia Lumbosakral Bilateral', 'Fisioterapi Manual + Stretching piriformis', 'Pelepasan jepitan saraf sciatic, kesemutan paha belakang berkurang.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM015', pasienData[14].id, pasienData[14].nama, 'Myofascial Pain Syndrome Upper Trapezius', 'Dry Needling trigger point bahu', 'Pelepasan taut band otot bahu, ROM leher kembali penuh.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM016', pasienData[15].id, pasienData[15].nama, 'Rheumatoid Arthritis Digiti Bilateral', 'Elektroterapi parafin bath', 'Mengurangi kekakuan pagi hari pada persendian jari tangan.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM017', pasienData[16].id, pasienData[16].nama, 'Gangguan Keseimbangan Geriatri', 'Terapi Latihan keseimbangan statis & dinamis', 'Mengurangi risiko jatuh pada pasien lansia.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM018', pasienData[17].id, pasienData[17].nama, 'Post Fraktur Radius Distal Dextra', 'Terapi Okupasi genggaman tangan', 'Meningkatkan kekuatan genggaman dan fleksi pergelangan tangan.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM019', pasienData[18].id, pasienData[18].nama, 'Pneumonia Ringan (Fisioterapi Dada)', 'Fisioterapi Manual chest physiotherapy', 'Postural drainage + tapotement untuk meluruhkan sputum.', 'Anisah Ainiyah', yesterdayStr, 'Aktif'],
-    ['RM020', pasienData[19].id, pasienData[19].nama, 'Strain Hamstring Bilateral', 'Terapi Latihan penguatan eksentrik', 'Stretching hamstring dinamis, tidak ada nyeri saat ditarik.', 'Anisah Ainiyah', yesterdayStr, 'Aktif']
+    ['RM001', pasienData[0].id, pasienData[0].nama, 'Low Back Pain ec HNP L4-L5', 'Fisioterapi Manual + Traksi Lumbal', 'Nyeri pinggang berkurang pasca traksi. Edukasi core stability.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM002', pasienData[1].id, pasienData[1].nama, 'Hemiparesis Sinistra pasca Stroke', 'Terapi Latihan fungsional', 'Latihan berjalan dengan quad-cane, keseimbangan mulai stabil.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM003', pasienData[2].id, pasienData[2].nama, 'Osteoarthritis Genu Bilateral', 'Elektroterapi + Ultrasound', 'Ultrasound di area lutut untuk mengurangi kekakuan sendi.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM004', pasienData[3].id, pasienData[3].nama, 'Frozen Shoulder Dextra', 'Hidroterapi di kolam hangat', 'Relaksasi otot bahu, ROM abduksi meningkat 15 derajat.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM005', pasienData[4].id, pasienData[4].nama, 'Pasca Rekonstruksi ACL Sinistra', 'Terapi Okupasi + Penguatan otot', 'Mobilisasi sendi lutut pasca operasi, fokus ekstensi penuh.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM006', pasienData[5].id, pasienData[5].nama, 'Spondylosis Cervical', 'Dry Needling upper trapezius', 'Pelepasan spasme otot leher belakang, pusing berkurang.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM007', pasienData[6].id, pasienData[6].nama, 'Carpal Tunnel Syndrome Bilateral', 'Elektroterapi TENS pergelangan tangan', 'Kebas di jari-jari berkurang setelah TENS selama 20 menit.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM008', pasienData[7].id, pasienData[7].nama, 'Plantar Fasciitis Bilateral', 'Fisioterapi Manual + Deep tissue massage', 'Peregangan plantar fascia telapak kaki, nyeri tumit berkurang.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM009', pasienData[8].id, pasienData[8].nama, 'Strain Gastrocnemius Dextra', 'Terapi Latihan stretching betis', 'Restorasi panjang serat otot betis, jalan tidak pincang.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM010', pasienData[9].id, pasienData[9].nama, 'Sprain Ankle Dextra Grade II', 'Hidroterapi + latihan proprioseptif', 'Latihan keseimbangan di kolam hangat untuk mengurangi bengkak.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM011', pasienData[10].id, pasienData[10].nama, 'Tennis Elbow Sinistra', 'Dry Needling extensor carpi radialis', 'Nyeri tekan siku lateral berkurang drastis.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM012', pasienData[11].id, pasienData[11].nama, 'Hemiparesis Dextra pasca Stroke', 'Terapi Okupasi aktivitas makan mandiri', 'Melatih motorik halus tangan kanan memegang sendok.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM013', pasienData[12].id, pasienData[12].nama, 'Delayed Motor Development', 'Terapi Latihan merangkak & berdiri', 'Stimulasi motorik kasar untuk anak usia 2 tahun.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM014', pasienData[13].id, pasienData[13].nama, 'Ischialgia Lumbosakral Bilateral', 'Fisioterapi Manual + Stretching piriformis', 'Pelepasan jepitan saraf sciatic, kesemutan paha belakang berkurang.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM015', pasienData[14].id, pasienData[14].nama, 'Myofascial Pain Syndrome Upper Trapezius', 'Dry Needling trigger point bahu', 'Pelepasan taut band otot bahu, ROM leher kembali penuh.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM016', pasienData[15].id, pasienData[15].nama, 'Rheumatoid Arthritis Digiti Bilateral', 'Elektroterapi parafin bath', 'Mengurangi kekakuan pagi hari pada persendian jari tangan.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM017', pasienData[16].id, pasienData[16].nama, 'Gangguan Keseimbangan Geriatri', 'Terapi Latihan keseimbangan statis & dinamis', 'Mengurangi risiko jatuh pada pasien lansia.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM018', pasienData[17].id, pasienData[17].nama, 'Post Fraktur Radius Distal Dextra', 'Terapi Okupasi genggaman tangan', 'Meningkatkan kekuatan genggaman dan fleksi pergelangan tangan.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM019', pasienData[18].id, pasienData[18].nama, 'Pneumonia Ringan (Fisioterapi Dada)', 'Fisioterapi Manual chest physiotherapy', 'Postural drainage + tapotement untuk meluruhkan sputum.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif'],
+    ['RM020', pasienData[19].id, pasienData[19].nama, 'Strain Hamstring Bilateral', 'Terapi Latihan penguatan eksentrik', 'Stretching hamstring dinamis, tidak ada nyeri saat ditarik.', 'Khoirunnisa, S.Ftr.Ftr., M.fis', yesterdayStr, 'Aktif']
   ];
   rekamList.forEach(function(row) { rekamSheet.appendRow(row); });
 
@@ -626,3 +626,4 @@ function doPost(e) {
       .setMimeType(ContentService.MimeType.JSON);
   }
 }
+

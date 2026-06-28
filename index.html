@@ -2779,7 +2779,7 @@
 
         var mockUsers = {
           'admin': { password: 'admin123', role: 'admin', nama: 'Administrator', idPasien: '' },
-          'fisioterapis': { password: 'fisio123', role: 'fisioterapis', nama: 'Anisah Ainiyah', idPasien: '' },
+          'fisioterapis': { password: 'fisio123', role: 'fisioterapis', nama: 'Khoirunnisa, S.Ftr.Ftr., M.fis', idPasien: '' },
           'pasien1': { password: 'pasien1123', role: 'pasien', nama: 'Andi Pratama', idPasien: 'PX001' },
           'pasien2': { password: 'pasien2123', role: 'pasien', nama: 'Siti Nurhaliza', idPasien: 'PX002' },
           'pasien3': { password: 'pasien3123', role: 'pasien', nama: 'Budi Santoso', idPasien: 'PX003' },
@@ -2853,7 +2853,7 @@
       });
     }
 
-    DATA.terapis = [{ id: 'PHY001', nama: 'Anisah Ainiyah', spesialisasi: 'Fisioterapis Utama', deskripsi: 'Fisioterapis berlisensi spesialis muskuloskeletal dan rehabilitasi.', shiftMulai: '08:00', shiftSelesai: '17:00' }];
+    DATA.terapis = [{ id: 'PHY001', nama: 'Khoirunnisa, S.Ftr.Ftr., M.fis', spesialisasi: 'Fisioterapis Utama', deskripsi: 'Fisioterapis berlisensi spesialis muskuloskeletal dan rehabilitasi.', shiftMulai: '08:00', shiftSelesai: '17:00' }];
     DATA.jenisTerapi = [
       { id: 'TRP001', nama: 'Fisioterapi Manual', deskripsi: 'Terapi manipulasi sendi dan jaringan lunak.', durasi: '45' },
       { id: 'TRP002', nama: 'Elektroterapi', deskripsi: 'Stimulasi listrik (TENS, Ultrasound).', durasi: '30' },
@@ -2867,49 +2867,49 @@
     var yesterdayStr = new Date(new Date().getTime()-86400000).toISOString().slice(0,10);
 
     DATA.jadwal = [
-      { id:'APT001', idPasien:'PX001', namaPasien:'Andi Pratama', jenisTerapi:'Fisioterapi Manual', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'08:00', ruang:'Ruang 1', status:'Menunggu' },
-      { id:'APT002', idPasien:'PX002', namaPasien:'Siti Nurhaliza', jenisTerapi:'Terapi Latihan', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'08:30', ruang:'Ruang 2', status:'Dalam Proses' },
-      { id:'APT003', idPasien:'PX003', namaPasien:'Budi Santoso', jenisTerapi:'Elektroterapi', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'09:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT004', idPasien:'PX004', namaPasien:'Dewi Lestari', jenisTerapi:'Hidroterapi', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'09:30', ruang:'Ruang 3', status:'Menunggu' },
-      { id:'APT005', idPasien:'PX005', namaPasien:'Rudi Hidayat', jenisTerapi:'Terapi Okupasi', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'10:00', ruang:'Ruang 2', status:'Selesai' },
-      { id:'APT006', idPasien:'PX006', namaPasien:'Rina Marlina', jenisTerapi:'Dry Needling', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'10:30', ruang:'Ruang 1', status:'Dalam Proses' },
-      { id:'APT007', idPasien:'PX007', namaPasien:'Joko Susanto', jenisTerapi:'Elektroterapi', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'11:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT008', idPasien:'PX008', namaPasien:'Maya Sari', jenisTerapi:'Fisioterapi Manual', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'11:30', ruang:'Ruang 2', status:'Menunggu' },
-      { id:'APT009', idPasien:'PX009', namaPasien:'Hendra Wijaya', jenisTerapi:'Terapi Latihan', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'13:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT010', idPasien:'PX010', namaPasien:'Citra Maharani', jenisTerapi:'Hidroterapi', terapis:'Anisah Ainiyah', tanggal:todayStr, jam:'13:30', ruang:'Ruang 3', status:'Selesai' },
-      { id:'APT011', idPasien:'PX011', namaPasien:'Wawan Saputra', jenisTerapi:'Dry Needling', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'08:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT012', idPasien:'PX012', namaPasien:'Lina Wulandari', jenisTerapi:'Terapi Okupasi', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'09:00', ruang:'Ruang 2', status:'Selesai' },
-      { id:'APT013', idPasien:'PX013', namaPasien:'Eko Kusuma', jenisTerapi:'Terapi Latihan', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'10:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT014', idPasien:'PX014', namaPasien:'Santi Fitriani', jenisTerapi:'Fisioterapi Manual', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'11:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT015', idPasien:'PX015', namaPasien:'Dedi Purnomo', jenisTerapi:'Dry Needling', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'13:00', ruang:'Ruang 2', status:'Selesai' },
-      { id:'APT016', idPasien:'PX016', namaPasien:'Yudi Setiawan', jenisTerapi:'Elektroterapi', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'14:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT017', idPasien:'PX017', namaPasien:'Tari Indah', jenisTerapi:'Terapi Latihan', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'15:00', ruang:'Ruang 2', status:'Selesai' },
-      { id:'APT018', idPasien:'PX018', namaPasien:'Yoga Prasetyo', jenisTerapi:'Terapi Okupasi', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'16:00', ruang:'Ruang 1', status:'Selesai' },
-      { id:'APT019', idPasien:'PX019', namaPasien:'Fajar Nugroho', jenisTerapi:'Fisioterapi Manual', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'16:30', ruang:'Ruang 2', status:'Selesai' },
-      { id:'APT020', idPasien:'PX020', namaPasien:'Guntur Pamungkas', jenisTerapi:'Terapi Latihan', terapis:'Anisah Ainiyah', tanggal:yesterdayStr, jam:'17:00', ruang:'Ruang 1', status:'Selesai' }
+      { id:'APT001', idPasien:'PX001', namaPasien:'Andi Pratama', jenisTerapi:'Fisioterapi Manual', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'08:00', ruang:'Ruang 1', status:'Menunggu' },
+      { id:'APT002', idPasien:'PX002', namaPasien:'Siti Nurhaliza', jenisTerapi:'Terapi Latihan', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'08:30', ruang:'Ruang 2', status:'Dalam Proses' },
+      { id:'APT003', idPasien:'PX003', namaPasien:'Budi Santoso', jenisTerapi:'Elektroterapi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'09:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT004', idPasien:'PX004', namaPasien:'Dewi Lestari', jenisTerapi:'Hidroterapi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'09:30', ruang:'Ruang 3', status:'Menunggu' },
+      { id:'APT005', idPasien:'PX005', namaPasien:'Rudi Hidayat', jenisTerapi:'Terapi Okupasi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'10:00', ruang:'Ruang 2', status:'Selesai' },
+      { id:'APT006', idPasien:'PX006', namaPasien:'Rina Marlina', jenisTerapi:'Dry Needling', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'10:30', ruang:'Ruang 1', status:'Dalam Proses' },
+      { id:'APT007', idPasien:'PX007', namaPasien:'Joko Susanto', jenisTerapi:'Elektroterapi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'11:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT008', idPasien:'PX008', namaPasien:'Maya Sari', jenisTerapi:'Fisioterapi Manual', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'11:30', ruang:'Ruang 2', status:'Menunggu' },
+      { id:'APT009', idPasien:'PX009', namaPasien:'Hendra Wijaya', jenisTerapi:'Terapi Latihan', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'13:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT010', idPasien:'PX010', namaPasien:'Citra Maharani', jenisTerapi:'Hidroterapi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:todayStr, jam:'13:30', ruang:'Ruang 3', status:'Selesai' },
+      { id:'APT011', idPasien:'PX011', namaPasien:'Wawan Saputra', jenisTerapi:'Dry Needling', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'08:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT012', idPasien:'PX012', namaPasien:'Lina Wulandari', jenisTerapi:'Terapi Okupasi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'09:00', ruang:'Ruang 2', status:'Selesai' },
+      { id:'APT013', idPasien:'PX013', namaPasien:'Eko Kusuma', jenisTerapi:'Terapi Latihan', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'10:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT014', idPasien:'PX014', namaPasien:'Santi Fitriani', jenisTerapi:'Fisioterapi Manual', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'11:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT015', idPasien:'PX015', namaPasien:'Dedi Purnomo', jenisTerapi:'Dry Needling', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'13:00', ruang:'Ruang 2', status:'Selesai' },
+      { id:'APT016', idPasien:'PX016', namaPasien:'Yudi Setiawan', jenisTerapi:'Elektroterapi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'14:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT017', idPasien:'PX017', namaPasien:'Tari Indah', jenisTerapi:'Terapi Latihan', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'15:00', ruang:'Ruang 2', status:'Selesai' },
+      { id:'APT018', idPasien:'PX018', namaPasien:'Yoga Prasetyo', jenisTerapi:'Terapi Okupasi', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'16:00', ruang:'Ruang 1', status:'Selesai' },
+      { id:'APT019', idPasien:'PX019', namaPasien:'Fajar Nugroho', jenisTerapi:'Fisioterapi Manual', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'16:30', ruang:'Ruang 2', status:'Selesai' },
+      { id:'APT020', idPasien:'PX020', namaPasien:'Guntur Pamungkas', jenisTerapi:'Terapi Latihan', terapis:'Khoirunnisa, S.Ftr.Ftr., M.fis', tanggal:yesterdayStr, jam:'17:00', ruang:'Ruang 1', status:'Selesai' }
     ];
 
     DATA.rekamMedis = [
-      { id:'RM001', idPasien:'PX001', namaPasien:'Andi Pratama', diagnosa:'Low Back Pain ec HNP L4-L5', tindakan:'Fisioterapi Manual + Traksi Lumbal', catatan:'Nyeri pinggang berkurang pasca traksi. Edukasi core stability.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM002', idPasien:'PX002', namaPasien:'Siti Nurhaliza', diagnosa:'Hemiparesis Sinistra pasca Stroke', tindakan:'Terapi Latihan fungsional', catatan:'Latihan berjalan dengan quad-cane, keseimbangan mulai stabil.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM003', idPasien:'PX003', namaPasien:'Osteoarthritis Genu Bilateral', tindakan:'Elektroterapi + Ultrasound', catatan:'Ultrasound di area lutut untuk mengurangi kekakuan sendi.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM004', idPasien:'PX004', namaPasien:'Frozen Shoulder Dextra', tindakan:'Hidroterapi di kolam hangat', catatan:'Relaksasi otot bahu, ROM abduksi meningkat 15 derajat.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM005', idPasien:'PX005', namaPasien:'Pasca Rekonstruksi ACL Sinistra', tindakan:'Terapi Okupasi + Penguatan otot', catatan:'Mobilisasi sendi lutut pasca operasi, fokus ekstensi penuh.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM006', idPasien:'PX006', namaPasien:'Spondylosis Cervical', tindakan:'Dry Needling upper trapezius', catatan:'Pelepasan spasme otot leher belakang, pusing berkurang.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM007', idPasien:'PX007', namaPasien:'Carpal Tunnel Syndrome Bilateral', tindakan:'Elektroterapi TENS pergelangan tangan', catatan:'Kebas di jari-jari berkurang setelah TENS selama 20 menit.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM008', idPasien:'PX008', namaPasien:'Plantar Fasciitis Bilateral', tindakan:'Fisioterapi Manual + Deep tissue massage', catatan:'Peregangan plantar fascia telapak kaki, nyeri tumit berkurang.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM009', idPasien:'PX009', namaPasien:'Strain Gastrocnemius Dextra', tindakan:'Terapi Latihan stretching betis', catatan:'Restorasi panjang serat otot betis, jalan tidak pincang.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM010', idPasien:'PX010', namaPasien:'Sprain Ankle Dextra Grade II', tindakan:'Hidroterapi + latihan proprioseptif', catatan:'Latihan keseimbangan di kolam hangat untuk mengurangi bengkak.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM011', idPasien:'PX011', namaPasien:'Tennis Elbow Sinistra', tindakan:'Dry Needling extensor carpi radialis', catatan:'Nyeri tekan siku lateral berkurang drastis.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM012', idPasien:'PX012', namaPasien:'Hemiparesis Dextra pasca Stroke', tindakan:'Terapi Okupasi aktivitas makan mandiri', catatan:'Melatih motorik halus tangan kanan memegang sendok.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM013', idPasien:'PX013', namaPasien:'Delayed Motor Development', tindakan:'Terapi Latihan merangkak & berdiri', catatan:'Stimulasi motorik kasar untuk anak usia 2 tahun.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM014', idPasien:'PX014', namaPasien:'Ischialgia Lumbosakral Bilateral', tindakan:'Fisioterapi Manual + Stretching piriformis', catatan:'Pelepasan jepitan saraf sciatic, kesemutan paha belakang berkurang.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM015', idPasien:'PX015', namaPasien:'Myofascial Pain Syndrome Upper Trapezius', tindakan:'Dry Needling trigger point bahu', catatan:'Pelepasan taut band otot bahu, ROM leher kembali penuh.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM016', idPasien:'PX016', namaPasien:'Rheumatoid Arthritis Digiti Bilateral', tindakan:'Elektroterapi parafin bath', catatan:'Mengurangi kekakuan pagi hari pada persendian jari tangan.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM017', idPasien:'PX017', namaPasien:'Gangguan Keseimbangan Geriatri', tindakan:'Terapi Latihan keseimbangan statis & dinamis', catatan:'Mengurangi risiko jatuh pada pasien lansia.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM018', idPasien:'PX018', namaPasien:'Post Fraktur Radius Distal Dextra', tindakan:'Terapi Okupasi genggaman tangan', catatan:'Meningkatkan kekuatan genggaman dan fleksi pergelangan tangan.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM019', idPasien:'PX019', namaPasien:'Pneumonia Ringan (Fisioterapi Dada)', tindakan:'Fisioterapi Manual chest physiotherapy', catatan:'Postural drainage + tapotement untuk meluruhkan sputum.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' },
-      { id:'RM020', idPasien:'PX020', namaPasien:'Strain Hamstring Bilateral', tindakan:'Terapi Latihan penguatan eksentrik', catatan:'Stretching hamstring dinamis, tidak ada nyeri saat ditarik.', pemeriksa:'Anisah Ainiyah', tglPeriksa:yesterdayStr, status:'Aktif' }
+      { id:'RM001', idPasien:'PX001', namaPasien:'Andi Pratama', diagnosa:'Low Back Pain ec HNP L4-L5', tindakan:'Fisioterapi Manual + Traksi Lumbal', catatan:'Nyeri pinggang berkurang pasca traksi. Edukasi core stability.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM002', idPasien:'PX002', namaPasien:'Siti Nurhaliza', diagnosa:'Hemiparesis Sinistra pasca Stroke', tindakan:'Terapi Latihan fungsional', catatan:'Latihan berjalan dengan quad-cane, keseimbangan mulai stabil.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM003', idPasien:'PX003', namaPasien:'Osteoarthritis Genu Bilateral', tindakan:'Elektroterapi + Ultrasound', catatan:'Ultrasound di area lutut untuk mengurangi kekakuan sendi.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM004', idPasien:'PX004', namaPasien:'Frozen Shoulder Dextra', tindakan:'Hidroterapi di kolam hangat', catatan:'Relaksasi otot bahu, ROM abduksi meningkat 15 derajat.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM005', idPasien:'PX005', namaPasien:'Pasca Rekonstruksi ACL Sinistra', tindakan:'Terapi Okupasi + Penguatan otot', catatan:'Mobilisasi sendi lutut pasca operasi, fokus ekstensi penuh.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM006', idPasien:'PX006', namaPasien:'Spondylosis Cervical', tindakan:'Dry Needling upper trapezius', catatan:'Pelepasan spasme otot leher belakang, pusing berkurang.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM007', idPasien:'PX007', namaPasien:'Carpal Tunnel Syndrome Bilateral', tindakan:'Elektroterapi TENS pergelangan tangan', catatan:'Kebas di jari-jari berkurang setelah TENS selama 20 menit.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM008', idPasien:'PX008', namaPasien:'Plantar Fasciitis Bilateral', tindakan:'Fisioterapi Manual + Deep tissue massage', catatan:'Peregangan plantar fascia telapak kaki, nyeri tumit berkurang.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM009', idPasien:'PX009', namaPasien:'Strain Gastrocnemius Dextra', tindakan:'Terapi Latihan stretching betis', catatan:'Restorasi panjang serat otot betis, jalan tidak pincang.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM010', idPasien:'PX010', namaPasien:'Sprain Ankle Dextra Grade II', tindakan:'Hidroterapi + latihan proprioseptif', catatan:'Latihan keseimbangan di kolam hangat untuk mengurangi bengkak.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM011', idPasien:'PX011', namaPasien:'Tennis Elbow Sinistra', tindakan:'Dry Needling extensor carpi radialis', catatan:'Nyeri tekan siku lateral berkurang drastis.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM012', idPasien:'PX012', namaPasien:'Hemiparesis Dextra pasca Stroke', tindakan:'Terapi Okupasi aktivitas makan mandiri', catatan:'Melatih motorik halus tangan kanan memegang sendok.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM013', idPasien:'PX013', namaPasien:'Delayed Motor Development', tindakan:'Terapi Latihan merangkak & berdiri', catatan:'Stimulasi motorik kasar untuk anak usia 2 tahun.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM014', idPasien:'PX014', namaPasien:'Ischialgia Lumbosakral Bilateral', tindakan:'Fisioterapi Manual + Stretching piriformis', catatan:'Pelepasan jepitan saraf sciatic, kesemutan paha belakang berkurang.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM015', idPasien:'PX015', namaPasien:'Myofascial Pain Syndrome Upper Trapezius', tindakan:'Dry Needling trigger point bahu', catatan:'Pelepasan taut band otot bahu, ROM leher kembali penuh.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM016', idPasien:'PX016', namaPasien:'Rheumatoid Arthritis Digiti Bilateral', tindakan:'Elektroterapi parafin bath', catatan:'Mengurangi kekakuan pagi hari pada persendian jari tangan.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM017', idPasien:'PX017', namaPasien:'Gangguan Keseimbangan Geriatri', tindakan:'Terapi Latihan keseimbangan statis & dinamis', catatan:'Mengurangi risiko jatuh pada pasien lansia.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM018', idPasien:'PX018', namaPasien:'Post Fraktur Radius Distal Dextra', tindakan:'Terapi Okupasi genggaman tangan', catatan:'Meningkatkan kekuatan genggaman dan fleksi pergelangan tangan.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM019', idPasien:'PX019', namaPasien:'Pneumonia Ringan (Fisioterapi Dada)', tindakan:'Fisioterapi Manual chest physiotherapy', catatan:'Postural drainage + tapotement untuk meluruhkan sputum.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' },
+      { id:'RM020', idPasien:'PX020', namaPasien:'Strain Hamstring Bilateral', tindakan:'Terapi Latihan penguatan eksentrik', catatan:'Stretching hamstring dinamis, tidak ada nyeri saat ditarik.', pemeriksa:'Khoirunnisa, S.Ftr.Ftr., M.fis', tglPeriksa:yesterdayStr, status:'Aktif' }
     ];
   }
 
@@ -3612,3 +3612,4 @@
 
 </body>
 </html>
+
