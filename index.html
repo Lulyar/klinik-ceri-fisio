@@ -2659,6 +2659,13 @@
     return String(text).replace(/[&<>"']/g, function(m) { return map[m]; });
   }
 
+  function updateTopbarDate() {
+    var el = document.getElementById('topbarDate');
+    if (el) {
+      el.textContent = new Date().toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    }
+  }
+
   // ========================================================
   // CONFIRM DIALOG
   // ========================================================
