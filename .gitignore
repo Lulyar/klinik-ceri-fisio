@@ -1,0 +1,9 @@
+# Ignore Microsoft Word temporary files
+~$*
+~*.docx
+*~$*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
