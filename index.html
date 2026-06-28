@@ -2496,37 +2496,65 @@
       script: {
         run: {
           withSuccessHandler: function(onSuccess) {
-            this.successHandler = onSuccess;
-            return this;
+            return createRunner(onSuccess, null);
           },
           withFailureHandler: function(onFailure) {
-            this.failureHandler = onFailure;
-            return this;
+            return createRunner(null, onFailure);
           }
         }
       }
     };
 
+    function createRunner(successHandler, failureHandler) {
+      var runner = {
+        successHandler: successHandler,
+        failureHandler: failureHandler,
+        withSuccessHandler: function(onSuccess) {
+          this.successHandler = onSuccess;
+          return this;
+        },
+        withFailureHandler: function(onFailure) {
+          this.failureHandler = onFailure;
+          return this;
+        }
+      };
+
+      var backendFunctions = ['login', 'getData', 'addData', 'updateData', 'updateStatus', 'deleteData', 'getNextId', 'getPatientById'];
+      backendFunctions.forEach(function(fnName) {
+        runner[fnName] = function() {
+          var args = Array.prototype.slice.call(arguments);
+          var sHandler = this.successHandler;
+          var fHandler = this.failureHandler;
+
+          fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'cors',
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify({ action: fnName, args: args })
+          })
+          .then(function(res) { return res.json(); })
+          .then(function(data) {
+            if (sHandler) sHandler(data);
+          })
+          .catch(function(err) {
+            if (fHandler) fHandler(err);
+            else console.error('Apps Script Web App Error:', err);
+          });
+        };
+      });
+
+      return runner;
+    }
+
     var backendFunctions = ['login', 'getData', 'addData', 'updateData', 'updateStatus', 'deleteData', 'getNextId', 'getPatientById'];
     backendFunctions.forEach(function(fnName) {
       window.google.script.run[fnName] = function() {
         var args = Array.prototype.slice.call(arguments);
-        var successHandler = this.successHandler;
-        var failureHandler = this.failureHandler;
-
         fetch(APPS_SCRIPT_URL, {
           method: 'POST',
           mode: 'cors',
           headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify({ action: fnName, args: args })
-        })
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-          if (successHandler) successHandler(data);
-        })
-        .catch(function(err) {
-          if (failureHandler) failureHandler(err);
-          else console.error('Apps Script Web App Error:', err);
         });
       };
     });
